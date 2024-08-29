@@ -3,13 +3,22 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 function printElements(array) {
-
+  for(let i = 0; i < array.length; i++){
+    console.log(array[i]);
+  }
 }
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
+  let maiorNumero = array[0]; //inicialização dinâmica
+  for (let i = 0; i < array.length; i++){
+    if(array[i] > maiorNumero){
+      maiorNumero = array[i];
+    }
+  }
 
+  return maiorNumero;
 }
 
 // Desafio 3
@@ -22,7 +31,7 @@ function ignoreFirstAndLastElement(array) {
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
-
+  
 }
 
 // Desafio 5
