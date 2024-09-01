@@ -37,8 +37,6 @@ function ignoreFirstAndLastElement(array) {
   
 }
 
-
-
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
@@ -55,16 +53,26 @@ function invertElementsArray(array) {
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 function invertString(string) {
-  
+ const myString = string.split("").reverse().join("");
+ 
+ return myString 
 }
 
-invertString()
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
-  
+  const noDupli = [];
+  let verific;
+  for(let i = 0; i <array.length; i++){
+    verific = array[i]
+    if (array[i] != verific){
+      noDupli.join(array[i]);
+    }
+  }
+
+  return noDupli;
 }
 
 module.exports = {
