@@ -64,15 +64,14 @@ function invertString(string) {
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
   const noDupli = [];
-  let verific;
-  for(let i = 0; i <array.length; i++){
-    verific = array[i]
-    if (array[i] != verific){
-      noDupli.join(array[i]);
+  for(let i = 0; i < array.length; i++){
+      if(!noDupli.includes(array[i])){
+        noDupli.push(array[i]);
     }
   }
-
+  
   return noDupli;
+  
 }
 
 module.exports = {
